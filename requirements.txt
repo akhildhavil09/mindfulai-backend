@@ -1,22 +1,34 @@
-fastapi==0.95.0
-uvicorn==0.21.1
-python-multipart==0.0.6
+# Core FastAPI stack (latest stable)
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# Auth & Security
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
-sqlalchemy==2.0.9
-psycopg2-binary==2.9.6
-python-dotenv==1.0.0
-weaviate-client==3.15.6
-openai==0.27.8
-python-magic==0.4.27
-pydantic==1.10.7
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-python-multipart==0.0.6
-transformers==4.30.2
-torch==2.0.1
+
+# Database
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+
+# Vector DB
+weaviate-client==4.8.2
+
+# AI/ML
+openai==1.51.0
+transformers==4.50.0
+torch==2.5.1  # Latest stable, works perfectly with your FLAN-T5 code
+
+# Audio/ML processing
 soundfile==0.12.1
-librosa==0.10.0
-numpy==1.24.3
+librosa==0.10.2
+numpy==2.1.1
 pydub==0.25.1
-SpeechRecognition==3.10.0
+SpeechRecognition==3.14.5
+
+# File detection
+python-magic==0.4.27
+
+# Pydantic (FastAPI requires v2 now)
+pydantic==2.9.2
