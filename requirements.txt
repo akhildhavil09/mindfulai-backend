@@ -19,7 +19,6 @@ weaviate-client==4.19.0
 openai==1.51.0
 transformers==4.50.0
 torch==2.5.1  # Latest stable, works perfectly with your FLAN-T5 code
-SpeechRecognition==3.14.3
 
 # Audio/ML processing
 soundfile==0.12.1
